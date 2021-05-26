@@ -1,0 +1,9 @@
+C:\Users\paul\source\repos\EALink-Registry-Changer\bin\Release\EALink-Registry-Changer.exe.config
+C:\Users\paul\source\repos\EALink-Registry-Changer\bin\Release\EALink-Registry-Changer.exe
+C:\Users\paul\source\repos\EALink-Registry-Changer\bin\Release\EALink-Registry-Changer.pdb
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink-Registry-Changer.csprojAssemblyReference.cache
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink_Registry_Changer.Form1.resources
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink_Registry_Changer.Properties.Resources.resources
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink-Registry-Changer.csproj.GenerateResource.cache
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink-Registry-Changer.exe
+C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Release\EALink-Registry-Changer.pdb

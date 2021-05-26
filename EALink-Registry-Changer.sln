@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EALink-Registry-Changer", "EALink-Registry-Changer.csproj", "{AB5EC7DF-8666-4667-A56E-D920D3081FEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB5EC7DF-8666-4667-A56E-D920D3081FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5EC7DF-8666-4667-A56E-D920D3081FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5EC7DF-8666-4667-A56E-D920D3081FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5EC7DF-8666-4667-A56E-D920D3081FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CFE13F3-B3B5-4BBD-9977-62DE2E548047}
+	EndGlobalSection
+EndGlobal
