@@ -6,3 +6,11 @@ C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Debug\EALink_Registry_Cha
 C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.csproj.GenerateResource.cache
 C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.exe
 C:\Users\paul\source\repos\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.pdb
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\bin\Debug\EALink-Registry-Changer.exe.config
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\bin\Debug\EALink-Registry-Changer.exe
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\bin\Debug\EALink-Registry-Changer.pdb
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\obj\Debug\EALink_Registry_Changer.Form1.resources
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\obj\Debug\EALink_Registry_Changer.Properties.Resources.resources
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.csproj.GenerateResource.cache
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.exe
+C:\Users\paul\Documents\GitHub\EALink-Registry-Changer\obj\Debug\EALink-Registry-Changer.pdb

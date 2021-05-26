@@ -26,7 +26,7 @@ namespace EALink_Registry_Changer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("\"C:\\Program Files (x86)\\Origin\\BattlefrontIIMOU.exe\" \"%1\" \"%2\" \"%3\" \"%4\" \"%5\" \"%6" +
-            "\" \"%7\" \"%8\" \"%9\"\"")]
+            "\" \"%7\" \"%8\" \"%9\"")]
         public string registryValue {
             get {
                 return ((string)(this["registryValue"]));
@@ -38,13 +38,29 @@ namespace EALink_Registry_Changer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public string hideTheApp {
             get {
                 return ((string)(this["hideTheApp"]));
             }
             set {
                 this["hideTheApp"] = value;
+            }
+        }
+        
+        /// <summary>
+        /// Minimum 3 secs. Won&apos;t rewrite registry for this many seconds.
+        /// </summary>
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.SettingsDescriptionAttribute("Minimum 3 secs. Won\'t rewrite registry for this many seconds.")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int backOffSeconds {
+            get {
+                return ((int)(this["backOffSeconds"]));
+            }
+            set {
+                this["backOffSeconds"] = value;
             }
         }
     }

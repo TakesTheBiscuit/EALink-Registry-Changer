@@ -15,12 +15,16 @@ namespace EALink_Registry_Changer
     {
         public string registryValue;
         public string hideTheApp;
-
+        public int backOffSeconds;
+        public int currentBackOff;
         public Form1()
         {
             InitializeComponent();
             this.registryValue = @Properties.Settings.Default.registryValue;
             this.hideTheApp = @Properties.Settings.Default.hideTheApp;
+            this.backOffSeconds = Properties.Settings.Default.backOffSeconds / 2; // account for 2 second form timer
+
+
             if (this.hideTheApp == "True")
             {
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -38,13 +42,12 @@ namespace EALink_Registry_Changer
         }
 
 
-        static bool isRunning(int id)
+        static bool isRunning()
         {
 
             try
             {
                 Process[] localByName = Process.GetProcessesByName("origin");
-                Console.WriteLine(localByName.Length);
 
                 if (localByName.Length > 0)
                 {
@@ -67,28 +70,40 @@ namespace EALink_Registry_Changer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Console.WriteLine(hideTheApp);
+            
             if (hideTheApp == "True")
             {
                 this.Hide();
             }
 
-            bool running = isRunning(15);
+            bool running = isRunning();
+
+            this.currentBackOff += 1;
+
+
+
             if (running)
             {
                 Console.WriteLine("Running");
 
-                textBox1.AppendText(DateTime.Now.ToLongTimeString() + ": Running");
-                textBox1.AppendText("\r\n");
 
-                //                                                                                           HKEY_CLASSES_ROOT\link2ea\shell\open\command
-                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(@"link2ea\shell\open\command", true);
+                if (this.backOffSeconds > 2)
+                {
+                    if (this.currentBackOff >= this.backOffSeconds)
+                    {
 
-                // HKEY_CLASSES_ROOT\link2ea\shell\open\command
-                key.SetValue("", this.registryValue);
+                        textBox1.AppendText(DateTime.Now.ToLongTimeString() + ": Running - writing registry now");
+                        textBox1.AppendText("\r\n");
 
-                //and finally, you close the key
-                key.Close();
+                        Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(@"link2ea\shell\open\command", true);
+                        // HKEY_CLASSES_ROOT\link2ea\shell\open\command
+                        key.SetValue("", this.registryValue);
+                        key.Close();
+
+                        this.currentBackOff = 0;
+                    }
+                }
+
             }
             else
             {
