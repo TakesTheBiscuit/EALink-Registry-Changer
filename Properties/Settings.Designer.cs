@@ -38,7 +38,7 @@ namespace EALink_Registry_Changer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public string hideTheApp {
             get {
                 return ((string)(this["hideTheApp"]));

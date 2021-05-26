@@ -6,7 +6,7 @@
       <Value Profile="(Default)">"C:\Program Files (x86)\Origin\BattlefrontIIMOU.exe" "%1" "%2" "%3" "%4" "%5" "%6" "%7" "%8" "%9"</Value>
     </Setting>
     <Setting Name="hideTheApp" Type="System.String" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="backOffSeconds" Description="Minimum 3 secs. Won't rewrite registry for this many seconds." Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
