@@ -18,5 +18,5 @@ This tool `EALink-Registry-Changer`, when running, will monitor a machine for an
 ## Settings
 
 - hideTheApp: True (hide the window) or False (see when origin running was detected)
-- registryValue: What value do you want to set (n.b suggested value: `<value>"C:\Program Files (x86)\Origin\BattlefrontIIMOU.exe" "%1" "%2" "%3" "%4" "%5" "%6" "%7" "%8" "%9""</value>`)
+- registryValue: What value do you want to set (n.b suggested value: `<value>"C:\Program Files (x86)\Origin\BattlefrontIIMOU.exe" "%1" "%2" "%3" "%4" "%5" "%6" "%7" "%8" "%9"</value>`)
 
